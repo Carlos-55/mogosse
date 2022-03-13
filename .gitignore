@@ -1,0 +1,13 @@
+# ignore modules
+node_modules
+
+# enviroments
+.env
+
+# logs
+logs
+
+
+# lock files
+yarn.lock
+ 
