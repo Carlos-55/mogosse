@@ -1,0 +1,25 @@
+{
+  "name": "mongo-connect",
+  "version": "1.0.0",
+  "description": "Ejemplo de conexion en mongo",
+  "main": "index.js",
+  "author": "Carlos Bayardo, Angel Alexis",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run clean && npm run build:prod",
+    "build:prod": "webpack --config webpack.prod.js",
+    "build:dev": "webpack --config webpack.dev.js",
+    "clean": "rm -rf build"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.6",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15"
+  }
+}
