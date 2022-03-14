@@ -2,7 +2,7 @@
 const { request, response } = require('express');
 const { getAllProducts, createProduct } = require('../service/products.service');
 
-const getAll = async (req = request.body, res = response) => {
+const getAll = async (req = request, res = response) => {
     try {
         const products = await getAllProducts();
         res.status(200)
